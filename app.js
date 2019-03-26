@@ -1,9 +1,9 @@
 var express = require("express");
 const MongoClient = require('mongodb').MongoClient
-//var bodyParser = require("body-parser");
+var queryString = require('query-string');
 var app = express();
 
-//app.use(bodyParser.urlencoded({ extended: false }));
+
 
 // Connection URL
 const mongoUrl = process.env.MONGO_URL //|| 'mongodb://db:27017/test';
